@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MediaQueries</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .parent{
+                height: 100vh;
+            }
+
+            .Header{
+                height: 10%;
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .header_menu{
+                display: flex;
+                gap: 20px;
+            }
+
+            .main{
+                height: 80%;
+                display: flex;
+            }
+
+            .main_img{
+                background-image: url("flipkart-png.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                width: 100%;
+                height: 100%;
+            }
+
+            .main_info_1{
+                font-size: 3vw;
+            }
+
+            .main_info_2, .main_info_3, .main_info_4, .main_info_5{
+                font-size: 2vw;
+            }
+
+            .footer{
+                height: 10%;
+                display: flex;
+                gap: 40px;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 30px;
+            }
+
+            @media(max-width:600px){
+                .header_menu{
+                    display: none;
+                }
+
+                .Header{
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .Header_logo{
+                    font-size: 8vw;
+                }
+
+                .main{
+                    flex-direction: column;
+                }
+
+                .main_info_2, .main_info_3, .main_info_4, .main_info_5{
+                    display: none;
+                }
+
+                .main_info_1{
+                    font-size: 5vw;
+                    text-align: center;
+                }
+
+                .footer{
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--parent-->
+        <div class="parent">
+
+            <!--Header-->
+            <div class="Header">
+                <div class="Header_logo">Finshng School</div>
+                <div class="header_menu">
+                    <a href="#"><i class="fa fa-home"></i>Home</a>
+                    <a href="#"><i class="fa fa-info"></i>About</a>
+                    <a href="#"><i class="fa fa-phone"></i>Contact</a>
+                    <a href="#"><i class="fa fa-sign-in"></i>Sign in</a>
+                    <a href="#"><i class="fa fa-linkedin"></i>Linkedin</a>
+                </div>
+            </div>
+
+            <!--main-->
+            <div class="main">
+                <div class="main_img"></div>
+                <p class="main_info_1">Fullstack Java</p><br>
+                <p class="main_info_2">Java</p><br>
+                <p class="main_info_3">Hyderabad</p><br>
+                <p class="main_info_4">Cybertower</p><br>
+                <p class="main_info_5">523333</p>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-google"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+    </body>
+</html>
