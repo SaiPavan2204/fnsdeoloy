@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Photography Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            
+        }
+        .container1 {
+            position: relative;  
+            display: inline-block;
+            margin: 50px;
+            padding: 20px;
+        }
+        .background-text {
+            color: #ddd;       
+            font-size: 50px;
+            font-weight: bold;
+            
+            color: transparent; 
+            -webkit-text-stroke: 1px #d9d9d9; 
+            text-shadow: none; 
+        }
+        .overlay-text {
+            position: absolute;  
+            top: 0;
+            left: 0;
+            
+            color: #8e8e8e;;        
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            
+        }
+        .nav {
+            display: flex;
+            position: relative;
+            padding: 20px;
+            gap: 20px;
+            text-orientation:mixed;
+            font-family: Arial, sans-serif;
+            transform: rotate(360deg);
+        }
+        .nav-item {
+            color: #888;
+            font-size: 16px;
+            cursor: pointer;
+
+            
+        }
+        .nav-item.active {
+            font-weight: bold;
+            color: #000;
+            position: relative;
+        }
+        .nav-item.active::after {
+            content: "";
+            position: absolute;
+            right: 16px;  
+            
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #f90;
+        }
+        .gallery-container {
+           
+            display: grid;
+            grid-template-columns:1fr 1fr 2fr;
+            gap: 15px;
+           
+            
+           
+        }
+        .gallery-item{
+            position: relative;
+            overflow: hidden;
+            
+        }
+        .gallery-item img 
+        {
+            
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            
+        }
+        .gallery-item::after 
+        {
+            content: "";
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(169, 169, 169, 0.5); 
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05); 
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1; 
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container1">
+        <div class="background-text">All Works</div>
+        <div class="overlay-text">Gallery</div>
+    </div>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-item active">All</div>
+            <div class="nav-item">Short films</div>
+            <div class="nav-item">Professional</div>
+            <div class="nav-item">Commercial</div>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="rabbit.png" >
+                
+            </div>
+            <div class="gallery-item">
+                <img src="2.png">
+                
+            </div>
+            <div class="gallery-item">
+                <img src="single.png" ">
+                
+            </div>
+            <div class="gallery-item">
+                <img src="4.png">
+                
+            </div>
+            
+            <div class="gallery-item">
+                <img src="6.png">
+                
+            </div>
+            <div class="gallery-item">
+                <img src="bag.png">
+            </div>
+            <div class="gallery-item">
+                <img src="walk.jpg">
+            </div>
+            <div class="gallery-item"> 
+                <img src="red.png">
+            </div>
+            <div class="gallery-item">
+                <img src="hang.png">
+            </div>
+
+            
+            
+                
+           
+        </div>
+    </div>
+</body>
+</html>

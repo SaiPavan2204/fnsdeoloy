@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Portfolio
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            .header{
+                display: flex;
+                height: 15vh;
+                width: 100%;
+                justify-content: space-between;
+            }
+            .navimage{
+                display: flex;
+                margin: 15px 40px;
+                gap: 8px;
+               
+            }
+            .nav_image{
+                height: 11.5vh;
+                width: 45%;
+                border: 1px solid black;
+                border-radius: 50%;
+                
+            }
+            .navmenu{
+                display: flex;
+                align-items: center;
+                margin-right: 40px;
+
+                gap: 80px;
+
+            }
+            
+            a{
+                
+                text-decoration: none;
+                font-size: 20px;
+                color: black;
+            }
+            .main{
+                
+                flex-direction: column;
+
+            }
+            .main_1{
+                display: flex;
+                background-color: rgb(0,98,185,0.8);
+                height: 90vh;
+                width: 100%;
+                gap:250px;
+
+            }
+            .main_links{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top:150px;
+               
+            }
+            .linkdin,.git{
+                border:1px solid white;
+                padding: 15px;
+                color: white;
+                font-size: 45px;
+            }
+            .leetcode{
+                border:1px solid white;
+                padding: 22.5px;
+                color: white;
+
+            }
+ 
+            .main_name{
+                display: flex;   
+              flex-direction: column;
+                color:white;
+                margin: 90px;
+              
+            }
+            h1{
+                font-size: 50px;
+            }
+            p{
+                font-size: 20px;
+                line-height: 1.8;
+
+                
+            }
+            button{
+                margin-top: 25px;
+                padding:10px;
+                border-radius:5px;
+                height:10vh;
+                width:34%;
+                font-size:22px;
+                text-align: center;
+                margin-left: 200px;
+                background-color: white;
+                cursor: pointer;
+                
+                
+            }
+            .main_2{
+                display: flex;
+                height: 120vh;
+                width: 100%;
+                flex-direction: column;
+                background-color: whitesmoke;
+                gap:50px;
+            }
+            .main_2a{
+                display: flex;
+                gap:90px;
+            }
+            .main_21{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .main_p{
+                color: gray;
+                line-height: 1.8;
+            }
+            .main_22{
+                height: 80vh;
+                width: 40%;
+                padding: 50px;
+                text-align: justify;
+                padding-left: 140px;
+                
+            }
+            .main_pa{
+                color: gray;
+                margin-top: 40px;
+                line-height: 1.8;
+            }
+            .button_2{
+               background-color: cadetblue;
+                color: white;
+                cursor:pointer;
+              
+               margin-left: 0px;
+                
+        
+            }
+            .main_23{
+                margin-top: 30px;
+            }
+           
+            
+            .list{
+                display: flex;
+                gap:10px;
+                
+            }
+            .list_1,.list_2,.list_3,.list_4,.list_5{
+                color: gray;
+                border: 1px solid grey;
+                padding: 13px;
+                background-color:gainsboro;
+            }
+            .main_3{
+                display: flex;
+                height: 270vh;
+                width: 100%;
+                flex-direction: column;
+                background-color:white;
+            }
+            .main_31{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 50px;
+            }
+            .main_32{
+                display: flex;
+                flex-direction: column;
+            }
+            .main_sub,.main_sub1,.main_sub2{
+                display: flex;
+                height: 100%;
+                width: 100%;
+                gap:80px;
+
+            }
+          
+            .port_img,.port_img1,.port_img2{
+                height:70% ;
+                width:95% ;
+                margin-left: 100px;
+            }
+            
+
+            
+            .c1,.c2,.c3{
+                background-color: lightseagreen;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .c4,.c5,.c6,.c7{
+                color: gray;
+                font-size: 22px;
+                padding-right: 90px;
+            }
+            .main_4{
+                display: flex;
+                height: 160vh;
+                width: 100%;
+                flex-direction: column;
+                
+                background-color: rgb(0,98,185,0.8);
+
+            }
+            .main_41{
+                display: flex;
+              
+                flex-direction: column;
+                align-items: center;
+                color: white;
+                padding: 0px;
+            }
+            .main_41p{
+                padding-bottom: 40px;
+            }
+            .form{
+                display: flex;
+                border: 1px solid gray;
+                flex-direction: column;
+                align-items: center;
+                height: 105vh;
+                width: 60%;
+                background-color: white;
+                margin-left: 250px;
+                border-radius: 10px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                font-size: 20px;
+                gap: 30px;
+                width: 70%;
+                color: grey;
+                font-size: 20px;
+                padding: 20px;
+            }
+            .main_c1,.main_c2{
+                padding: 30px;
+                width: 95%;
+                background-color: gainsboro;
+                margin: 0px;
+                font-size: 15px;
+                border-radius: 10px;
+                
+            }
+            .main_c3{
+                padding: 30px;
+                width: 95%;
+                height: 85px;
+                background-color: gainsboro;
+                font-size: 15px;
+                border-radius: 10px;
+
+            }
+            .main_h4,.main_h41,.main_h42{
+              padding: 0px;
+              margin: 0px;
+               color: grey;
+                
+            }
+            .main4_button{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                margin-top: 40px;
+            }
+            .main4_button1{
+                background-color: lightseagreen;
+                
+                cursor: pointer;
+            
+            }
+            .footer{
+                display: flex;
+                height: 50vh;
+                width: 100%;
+                background-color: black;
+                flex-direction: column;
+                
+
+            }
+            .footer_1{
+                display: flex;
+                
+            }
+            .footer_11{
+                width: 49%;
+               display: flex;
+               color: white;
+               flex-direction: column;
+            }
+            .footer_h1{
+                padding-left: 0px;
+                padding-top: 50px;
+            }
+            .footer_p{
+                padding-left: 270px;
+                font-size: 17px;
+                text-align: justify;
+            }
+            .footer_12{
+                width: 48%;
+                display: flex;
+                flex-direction: column;
+                padding-left: 450px;
+               padding-top: 50px;
+                gap:10px;
+                align-items: center;
+
+            }
+            .footer_links{
+                display: flex;
+                padding: 1px;
+                font-size: 3px;
+            }
+            .footer_h2{
+                color: white;
+                margin: 0px;
+                padding: 0px;
+                font-size: 30px;
+            }
+            
+           
+            .linkdin1,.git1,.leetcode1{
+              
+                padding: 7px;
+                color: white;
+                font-size: 35px;
+                border-radius: 5px;
+            }
+            
+            .footer_h1{
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 145px;
+                
+            }
+            .footer_a{
+                display: flex;
+                justify-content: center;
+                color: white;
+                font-size: 1px;
+               
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+           
+                <div class="navimage">
+                   <img class="nav_image" src="me png.jpg">
+                   <h3>Sai Pavan</h3>
+                </div>
+                <div class="navmenu">
+                   <a href="#"><b>Home</b></a>
+                   <a href="#"><b>About</b></a>
+                   <a href="#"><b>Projects</b></a>
+                   <a href="#"><b>Contact</b></a>
+                </div>
+                .hover{
+                    transform: scale(1.1);
+                    background-color:orange;
+                }
+                
+            
+           
+        </div>
+        <div class="main">
+            <div class="main_1">
+                <div class="main_links">
+                    <a class="linkdin" href="https://www.linkedin.com/in/hari-priya-natukula" target="_blank"><b>in</b></a>
+                    <a  class="git" href="https://github.com/HariPriya06-N/fnsdeployment" target="_blank"><i class="fab fa-github"></i></a>
+                   
+                         
+                    <a class="insta" href="http://www.instagram.comInstagram"  target=" _blank"><i class="fa fa-code"></i></a>
+
+                </div>
+                <div class="main_name">
+                    <h1>HEY MY NAME IS, SAI PAVAN</h1>
+                    <p>I am Saipavan, a final-year B.Tech student determined to secure a good job before <br>graduation. I am improving my skills in aptitude, reasoning, Java coding, full-stack<br> development, and communication to achieve my career goals.</p>
+                    <button><b>Projects</b></button>
+                </div>
+                
+            </div>
+            <div class="main_2">
+                <div class="main_21">
+                    <h1 class="main_h1">About Me</h1>
+                    <p class="main_p">I am SAI PAVAN, an introverted yet determined person who values genuine<br> friendships and self-improvement. I stay motivated, embrace challenges,<br> and continuously work on enhancing my skills and confidence.</p>
+
+                </div> 
+                <div class="main_2a">
+                     <div class="main_22">
+                         <h2>Get to Know about me!</h2>
+                         <p class="main_pa">I am <b>SaiPavan</b>, a final-year B.Tech student passionate about continuous learning and self-improvement. I am enhancing my skills in <b>full-stack development</b>, <b>Java coding</b>, <b>aptitude</b>, and <b>reasoning</b> to achieve my career goals. As an introverted yet determined person, I value genuine friendships and embrace challenges with a positive mindset. My focus is on growing both technically and personally to secure a successful future.</p>
+                         <button class="button_2">Contact</button>
+
+                     </div>
+                     <div class="main_23">
+                          <h2>My Skills</h2>
+                         <div class="list">
+                             <b class="list_1">HTML</b>
+                              <b class="list_2">CSS</b>
+                              <b class="list_3">JAVASCRIPT</b>
+                             <b class="list_4">JAVA</b>
+                             <b class="list_5">PYTHON</b>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div class="main_3">
+                <div class="main_31">
+                    <h1>Projects</h1>
+                    <p class="c7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos unde recusandae molestiae beatae laboriosam quod impedit nemo ipsum id?</p>
+                </div>
+                <div class="main_32">
+                    <div class="main_sub">
+                        <div class="sub1">
+                            <img class="port_img" src="project_1">
+
+                        </div>
+                        <div class="sub2">
+                            <h2>Project 1</h2>
+                            <p class="c4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit doloremque maxime, eum corporis eaque.</p>
+                            <button class="c1"><b>case study</b></button>
+                        </div>
+                    </div>
+
+
+                    <div class="main_sub1">
+                        <div class="sub11">
+                            <img class="port_img1" src="project_1">
+
+                        </div>
+                        <div class="sub21">
+                            <h2>Project 2</h2>
+                            <p class="c5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit doloremque maxime, eum corporis eaque.</p>
+                            <button class="c2"><b>case study</b></button>
+                        </div>
+                    </div>
+
+
+                    <div class="main_sub2">
+                        <div class="sub12">
+                            <img class="port_img2" src="project_1">
+
+                        </div>
+                        <div class="sub22">
+                            <h2>Project 3</h2>
+                            <p class="c6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit doloremque maxime, eum corporis eaque.</p>
+                            <button class="c3"><b>case study</b></button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="main_4">
+                <div class="main_41">
+                    <h1 class="main_4h1">CONTACT</h1>
+                    <p class="main_4p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum dolorem debitis sapiente ut dicta.</p>
+                </div>
+                <div class="form">
+                    <form>
+                        <h4 class="main_h4">Name</h4>
+                        <input class="main_c1"type="text"  name="name" placeholder="Enter your name" >
+
+                        <h4 class="main_h41">Email</h4>
+                        <input  class="main_c2" type="email" name="Email" placeholder="Enter Your Email">
+                        <h4 class="main_h42">Messege</h4>
+                        <textarea  class="main_c3">Enter Your Messege</textarea>
+                        <div class="main4_button">
+                        <button class="main4_button1">SUBMIT</button>
+                        <div class="hover-box">
+                            Hover over me!
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+           <div class="footer_1">
+
+            <div class="footer_11">
+                <h3 class="footer_h1">SAI PAVAN</h3>
+                <P class="footer_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod id fugit. Vero, sequi impedit!</P>
+            </div>
+            <div class="footer_12">
+                <h3 class="footer_h2">Social</h3>
+                <div class="footer_links">
+                     <a class="linkdin1" href=https://www.linkedin.com/feed/ target="_blank"><b>in</b></a>
+                     <a  class="git1" href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+         
+                    <a class="leetcode1" href=""  target=" _blank"><i class="fa fa-code"></i></a>
+                    
+                </div>
+            </div>
+
+           </div>
+          
+           <div class="footer_a">
+            
+            <p>
+                @copyright by <u>R.V.SaiPavan</u>
+            </p>
+
+           </div>
+
+        </div>
+        
+    </body>
+</html>

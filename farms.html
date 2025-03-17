@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Varadhi Forms</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                margin:0px;
+                padding:0px;
+                box-sizing: border-box;
+            }
+            .header{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            h3{
+                text-align: center;
+            }
+            .header__1{
+                display: flex;
+                background-color:#25673F;
+                justify-content: center;
+                align-items: center;
+                color:white;
+                height:10vh;
+                width: 100vw;
+                text-align: center;
+                
+                
+            }
+            
+            .header__2{
+                display: flex;
+                background-color:#F8C027;
+                height:15vh;
+                width: 100vw;
+                justify-content:space-evenly;
+                gap:23%;
+                
+                
+            }
+            .header__logo{
+                display:flex;
+                justify-content: flex-start;
+                width:5%;
+                height: auto;
+                padding-right: 0px;
+               
+                
+            }
+            .header__menu{
+                display: flex;
+                justify-content:center;
+                gap:25px;
+                text-align: center;
+                font-size: 12px;
+                align-items: center;
+                color: #000000;
+            }
+            .header__icons{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                gap: 5px;
+                align-items: center;
+                color:#F8C027;
+                color: #F8C027;
+                
+            }
+            .banner{
+                display: flex;
+                height:100vh;
+                width:100vw;
+                background-image: url("banner.jpg");
+                margin-top: 1px;
+               background-size:100%;
+               background-repeat: no-repeat;
+               margin-bottom: 0px;
+
+            }
+            .heading1{
+                
+                display: flex;
+                margin-left:20px;
+                margin-top: 0px;
+                align-items: flex-start;
+                background-color:burlywood;
+
+            }
+            .heading2{
+                
+                display: flex;
+                margin-left: 50px;
+                align-items: flex-end;
+                margin: none;
+                
+
+            }
+            .button{
+                display: flex;
+                justify-content: flex-end;
+                align-items:flex-end;
+              
+            }
+            .some_info{
+                display: flex;
+                height: 10vh;
+                justify-content: space-between;
+                width: 100vw;
+                flex-direction: column;
+                margin: 0px;
+              
+            }
+            .button1{
+                display: flex;
+                align-items: center;
+                background-color: #F8C027;
+                padding: 10px;
+                font-size:25px;
+                border-radius:25px 25px 25px 25px;
+                border: none;
+                margin: none;
+            }
+            .collection{
+
+                margin: 120px 30px 0px 30px;
+                display:flex;
+                width:100vw;
+                flex-wrap: wrap;
+                justify-content:space-between;
+                height:100vh;    
+            }
+            .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8{
+                
+                display: display;
+                width: 24%;
+                text-align: center;
+                flex-direction: column;
+                object-fit: cover;
+                gap:25px; 
+                
+            }
+            
+            .c1 img,.c2 img,.c3 img,.c4 img,.c5 img,.c6 img,.c7 img,.c8 img{
+                
+               width:100%;
+               height: 60vh;
+               border-radius: 5%;
+            }
+            .c__info{
+                display: flex;
+                height:20vh;
+                width: 100%;
+                flex-direction: column;    
+
+            }
+            .c__info h3{
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .img_container:hover .hover_button{
+                background-color: skyblue;
+                border-radius: 50%;
+            }
+            
+           .main{
+            display: flex;
+            margin-top: 0px;
+            flex-direction: column;
+            
+
+           }
+           .main2{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width:100% ;
+           }
+           .parent_button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+           }
+           .button_1{
+            background-color: #F8C027;
+            border-radius:35px 35px 35px 35px;
+            padding: 30px;
+            
+           }
+           .eoc{
+            display: flex;
+            margin-top: 10px;
+           
+            height: 100vh;
+            width: 100vw;
+
+            background-color:#25673F;
+            flex-wrap: wrap;
+            object-fit: cover;
+            overflow: hidden;
+            
+            
+           }
+           h1{
+            color: white;
+            margin-top: 50px;
+            margin-left: 20px;
+           }
+           h4{
+            color: white;
+            margin-left: 20px;
+
+           }
+           .eoc_img{
+            
+            display: flex;
+            width:15%;
+            height: 60vh;
+            
+            gap: 15px;
+            margin-left: 20px;
+            max-width:100%;
+            max-height:100%;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 15%;
+           }
+           .eoc_button{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+
+           }
+           .button2{
+            background-color: #F8C027;
+            border-radius: 35px 35px 35px 35px;
+            margin-top: 20px;
+            padding:30px;
+
+           }
+           .Only_img{
+            display: flex;
+            gap:10px;
+            margin-top: 20px;
+            
+           
+            border: 1px solid ghostwhite;
+           }
+           .only_img{
+            
+            display: flex;
+            flex-direction: row;
+            height:100vh;
+            width: 100vw;
+            flex-wrap: wrap;
+            gap:30px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+           }
+           .only_img1{
+            display: flex;
+            width:52;
+            height:95vh;
+            flex-direction:column;
+           
+            gap:3%;
+           
+            
+           }
+           .only_img11{
+            display: flex;
+            flex: 1;
+            width:46%;
+            height:46vh;
+            margin: none;
+          
+           
+
+           }
+           .only_img12{
+            display: flex;
+            flex: 1;
+            width:52%;
+            height:46vh;
+            margin: none;
+            
+
+           
+           }
+           .only_img2{
+            display: flex;
+            margin-left: 60px;
+            width:52%;
+            height:95vh;
+            margin: none;
+            border-radius: 55%;
+            
+            
+           }
+           .marquee1{
+            display: flex;
+            height: 20vh;
+            width: 100vw;
+            
+            background-color: #25673F;
+            margin-bottom: 10px;
+
+           }
+           .discount{
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            justify-content: space-evenly;
+            gap:5%;
+            margin-top: 10px;
+            margin-bottom: none;
+            
+           }
+           .dis_1{
+            justify-content: flex-start;
+            width: 30%;
+            margin: none;
+            height: 70vh;
+           
+            
+           }
+           .dis_2{
+            flex-direction: column;
+            height: 70vh;
+            width: 30%;
+           
+           }
+          
+        
+           .dis_3{
+            align-items: flex-start;
+            color: #000000;
+           }
+           .dis_6{
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+           }
+           .dis_4{
+            align-items: flex-end;
+            color: #000000;
+           }
+          
+           .dis_5{
+            justify-content: flex-end;
+            width: 30%;
+            margin: none;
+            height: 70vh;
+           }
+           .about_us {
+             display: flex;
+             height: 90vh;
+            width:100%;
+            justify-content: space-between;
+            flex-direction: row;
+             margin-top: none;
+             border: 1px solid ghostwhite;
+             margin-bottom: none;
+            
+            
+           }
+           .product{
+            display: flex;
+            height: 85vh;
+            width: 100vw;
+            justify-content: space-evenly;
+            border: 1px solid gainsboro;
+            gap: 0px;
+
+           }
+           .product_image{
+            display: flex;
+            height:79vh ;
+            width:65vw;
+           }
+           .product_details{
+            display: flex;
+            flex-direction: column;
+            height: 79vh;
+            width: 57vw;
+
+           }
+           .product_h1{
+            display: flex;
+            color: #000000;
+            align-items:center;
+            margin: none;
+
+
+           }
+           .product_p{
+            display: flex;
+            text-size-adjust: 100px;
+            padding: 20px;
+            font-size: 20px;
+
+           }
+           .product_p1{
+            display: flex;
+            padding-left:  10px;
+            font-size: 20px;
+           }
+           .product_b1{
+            display: flex;
+            height: 10vh;
+            width: 15vw;
+            border-radius: 30px;
+            padding: 30px;
+            padding-left: 90px;
+            margin-bottom: 20px;
+            background-color: aliceblue;
+            padding: 20px;
+            margin: 10px;
+           
+
+           }
+           .product_b2{
+            display: flex;
+            color: white;
+            justify-content: center;
+            background-color: #25673F;
+            padding: 20px;
+            height: 10vh;
+            text-align: center;
+            border-radius: 30px;
+            margin: 10px;
+           }
+
+           .about_us1, .about_us2 {
+             display: flex;
+             height: 35vh;
+             width:100%;
+             
+             margin: 10px 10px 10px 10px;
+             gap:30px;
+             
+
+           }
+
+
+           .about_us1 {
+            display: flex;
+             justify-content: flex-start;
+             flex: 1;
+             width:30%;
+            
+           }
+          
+
+          .owner_img {
+             width:50%;
+             max-width: 48%;
+             height:79vh;
+            
+             display: block;
+             border-radius: 5%;
+   
+          }
+
+         .about_us2 {
+            display: flex;
+            flex: 1;
+            height: 77vh;
+            flex-direction: column;
+            background-color: #F8C027;
+            justify-content: flex-end;
+            align-self:flex-start;
+            }
+
+         .about_h1  {
+            display: flex;
+            color: #000000;
+            justify-content: center;
+            
+            padding: 30px;
+            margin-top: 25px;
+           }
+           .about_p{
+            display: flex;
+            color: #000000;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            margin-bottom: 150px;
+
+           }
+           .footer{
+            display: flex;
+            flex-direction: column;
+           }
+           .testinomi{
+            display: flex;
+            height: 50vh;
+            width: 100vw;
+            flex-direction:column;
+            margin: 5px;
+            margin-bottom: 10px;
+            margin-top: none;
+           }
+           .test1{
+            display: flex;
+            color: #000000;
+            height: 10vh;
+            width: 100%;
+            padding: 10px;
+           }
+           .mainbox{
+            display: flex;
+            height: 35vh;
+            width:97%;
+            flex-direction: row;
+            gap:10px;
+           }
+           
+           .box{
+            display: flex;
+            border: 2px solid gainsboro;
+            background-color: gainsboro;
+            flex-direction: column;
+            height:30vh;
+            width: 33%;
+            margin-left: 5px;
+            padding: 15px;
+            
+           }
+           
+           
+           test_p1{
+            color: #000000;
+            height: 5vh;
+           }
+           .test2{
+            color: #000000;
+            height: 5vh;
+           }
+           .p2{
+            color: #000000;
+            height: 5vh;
+           }
+
+           .box1{
+            display: flex;
+            border: 2px solid gainsboro;
+            background-color: gainsboro;
+            flex-direction: column;
+            height: 30vh;
+            width: 33%;
+            padding: 15px;
+           }
+
+           .test21{
+            color: #000000;
+           }
+           .p21{
+            color: #000000;
+           }
+
+           .box2{
+            display: flex;
+            border: 2px solid gainsboro;
+            background-color: gainsboro;
+            flex-direction: column;
+            height: 30vh;
+            width: 33%;
+            padding: 15px;
+           }
+          
+           .test22{
+            color: #000000;
+           }
+           .p22{
+            color: #000000;
+           }
+           .faq{
+            display: flex;
+            height: 50vh;
+            width: 97%;
+            background-color: #25673F;
+            margin-top:30px;
+            justify-content: space-between;
+
+
+           }
+           .faq_h1{
+            padding: 25px;
+
+           }
+           .faq_p{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            margin: none;
+           
+           }
+           .faq_1{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #F8C027;
+            height: 30vh;
+            width: 45%;
+            border-radius: 30px;
+            color: #000000;
+            flex-direction: column;
+            margin-top: 20px;
+
+           }
+           
+           .faq_h11{
+            display: flex;
+            color: #000000;
+           }
+           .faq_h12{
+            display: flex;
+            color: #000000;
+           }
+           .faq_h13{
+            display: flex;
+            color: #000000;
+           }
+           .social_media{
+            display: flex;
+            height:70vh;
+            width: 100%;
+            
+            flex-direction: column;
+            margin-top: 5px;
+            gap: 10px;
+            border: 1px solid ghostwhite;
+            
+
+           }
+           .social_h1{
+            display: flex;
+            justify-content: center;
+           align-items: flex-start;
+           }
+           .social_images{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap:10px;
+            margin-left: 5px;
+
+           }
+           .so1,.so2, .so3,.so4,.so5,.so6{
+            display: flex;
+            height: 55vh;
+            width: 15%;
+            border-radius: 30px;
+           }
+           .footer_1{
+              display: flex;
+             height: 100hv;
+              width: 97%;
+              background-color: #F8C027;
+              border: 1px solid white;
+              margin: 10px;
+           }
+           .footer_2{
+              display:flex ;
+              flex-direction: column;
+              padding: 13px;
+           }
+           .footer_4{
+              display: flex;
+             flex-direction: column;
+           }
+           .footer_3{
+             display: flex;
+               flex-direction: column;
+           }
+           .footer_5{
+              display: flex;
+              flex-direction: column;
+           }
+   
+         
+         
+         
+          
+
+            
+           
+            
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <!--header-->
+            <div class="header">
+                <div class="header__1">
+                    <marquee direction="up"><h3>Varadhi Forms</h3></marquee>
+                </div>
+                <div class="header__2">
+                    <div class="header__logo">
+                        <img src="varadhi logo1">
+                    </div>
+                    <div class="header__menu">
+                        <h2>Home</h2>
+                        <h2>View Collection</h2>
+                        <h2>Shop All</h2>
+                        <h2>Track Your Order</h2>
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="header__icons">
+                        <a href="#"><i class="fa fa-search"></i></a>
+                        <a href="#"><i class="fa fa-user"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--main-->
+            <div class="main">
+                
+                <div class="banner">
+                    <img src="Honey2 (1).webp">
+                    
+                </div>
+                <div class="some_info">
+                  <div class="heading1">
+                    <h1>Shop Our Customers Favorite</h1>
+                  </div>
+                  <div class="heading2">
+                    <p>These are Our Best Sellers You’ll Fall in Love With Too</p>
+                  </div>
+                  <div class="button">
+                    <button class="button1">view all ></button>
+                  </div>
+                </div>
+                <div class="collection">
+                    <div class="c1">
+                        <img src="Ghee_HighRes.webp">
+                        <div class="c__info">
+                        <h3>A2 Desi Cow Cultured Ghee</h3>
+                        <h3 style="color:red">Rs.9000</h3>
+                        <h3>615 Rivews<i class="fa fa-star"></i></h3>
+                        </div>
+
+                    </div>
+                    <div class="c2">
+                        
+                        <img src="Honey2.webp">
+                        <div class="c__info">
+
+                    
+                        <h3>Farm Fresh Raw Natural Honey</h3>
+                        <h3 style="color:red">Rs.900</h3>
+                        <h3>Rivews<i class="fa fa-star"></i></h3>
+                    </div>
+                    </div>
+                    <div class="c3">
+                       
+                        <img src="Wlid forest">
+                        <div class="c__info">
+                        
+                        <h3>Wild Raw Forest Honey</h3>
+                        <h3 style="color:red">Rs.400</h3>
+                        <h3>Rivews<i class="fa fa-star"></i></h3>
+                    </div>
+
+                    </div>
+                    <div class="c4">
+                        
+                        <img src="Small  bee forest Honey">
+                        <div class="c__info">
+
+                        <h3>Small bee forest honey</h3>
+                        <h3 style="color:red">Rs.5900</h3>
+                        <h3>Rivews<i class="fa fa-star"></i></h3>
+                    </div>
+                    </div>
+                    <div class="c5">
+                        
+                        <img src="Unprocesssed Natural Turmeric">
+                        <div class="c__info">
+
+                        <h3>Forest Turmeric Powder</h3>
+                        <h3 style="color:red">Rs.990</h3>
+                        <h3>Rivews<i class="fa fa-star"></i></h3>
+                    </div>
+                    </div>
+                    <div class="c6">
+                        
+                        <img src="Forest Turmeric Powder">
+                        <div class="c__info">
+
+                        <h3>Forest Turmeric Powder</h3>
+                        <h3 style="color:red">Rs.1900</h3>
+                        <h3>Rivews<i class="fa fa-star"></i></h3>
+                    </div>
+                    </div>
+                    <div class="c7">
+                        
+                        <img src="Lakshman Phal Juice">
+                        <div class="c__info">
+
+                        <h3>Lakshman Phal Juice</h3>
+                        <h3 style="color:red">Rs.1800</h3>
+                        <h3>Rivews<i class="fa fa-star"></i></h3>
+                    </div>
+                    </div>
+                    <div class="c8">
+                       
+                        <img src="Jaggery Powder">
+                        <div class="c__info">
+
+                        <h3>Jaggery Powder</h3>
+                        <h3 style="color:red">Rs.8000</h3>
+                        <h3>Rivews<i class="fa fa-star"></i></h3>
+                    </div>
+                </div>
+
+                    
+            <!--main2-->
+            <div class="main2">
+                
+                <div class="parent_button">
+                    <button class="button_1"> View All Products</button> 
+                </div>
+                
+                <div class="eoc">
+                    <div class="eoc2">
+                        <h1>Explore Our Collections</h1>
+                        <h4>Find Your Favorites From Our Wide Range of Categories</h4>
+                    <div class="eoc">
+                        <img src="Lip Balm">
+                        <img src="Spices">
+                        <img src="Pickles">
+                        <img src="sweet_and_snacks.webp">
+
+
+                    </div>
+                    <div class="eoc_button">
+                        <button class="button2">View All Collection's</button>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="Only_img">
+                    <div class="only_img">
+                        <div class="only_img1">
+                           <div class="only_img11">
+                             <img src="sweetner_and_salts_collection_image_varadhi_farms.webp">
+                             
+                           </div>
+                           <div class="only_img12">
+                            <img src="Oils">
+                           </div>
+                        </div>
+                        <div class="only_img2">
+                            <img src="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="marquee1">
+                    <marquee direction="left" scrollamount="25"><h1>Free Shipping On Orders Above 999</h1></marquee>
+                </div>
+                <div class="discount">
+                    <div class="dis_1">
+                        <img src="">
+                
+                    </div>
+                    <div class="dis_2">
+                        <h1 class="dis_3">Did You Know?</h1>
+                        <h1 class="dis_6">90%</h1>
+                        <img src="honey and ghee.html">
+                     
+                        <h1 class="dis_4">of Honey and Ghee’s use is to Enhance Meals.</h1>
+                
+                    </div>
+                    <div class="dis_5">
+                        <img src="owner">
+                    </div>
+                
+                </div>
+                <div class="product">
+                    <div class="product_image">
+                        <img src="bags.png.png">
+                    </div>
+                    <div class="product_details">
+                        <h1 class="product_h1">Product</h1>
+                        <p class="product_p">Rs.450</p>
+                        <hr class="hr">
+                        <p class="product_p1">Quantity</p>
+                        <b><button class="product_b1">-   1    +</button></b>
+                        <button class="product_b2">Add to cart</button>
+
+
+                    </div>
+                </div>
+                
+
+
+               
+                <div class="about_us">
+                    <div class="about_us1">
+                        <img class="owner_img" src="owner.img">
+                    <div class="about_us2">
+                        <h1 class="about_h1">About Us</h1>
+                        <p class="about_p">Welcome to Vaaradhi Farms! I am Nethra and I am extremely passionate about<br>
+                             healthy living and sustainable food practices.<br>
+
+                            I am committed to making a positive impact on the world through our business.<br>
+                            
+                            Thank you for choosing our organic food products, and I look forward to serving you soon.</p>
+                    </div>
+                    </div>
+
+                </div>
+                <div></div>
+
+            </div>
+
+            <!--footer-->
+            <div class="footer">
+                <div class="testinomi">
+                    <h1 class="test1">Tesinominals</h1>
+                    <div class="mainbox">
+                        <div class="box">
+                        
+                              <p class="test_p1">Ghee</p>
+                             <h1 class="test2">Venkateswara Rao</h1>
+                             <p class="p2">Cow Ghee, It's really good. When the quality is not compromised price wouldn't be an issue.</p>
+                         </div>
+                         <div class="box1">
+                        
+                             <p class="test_p11">Honey and Turmaric</p>
+                             <h1 class="test2">Rao</h1>
+                             <p class="p21">Cow Ghee, It's really good. When the quality is not compromised price wouldn't be an issue.</p>
+                         </div>
+                         <div class="box2">
+                        
+                              <p class="test_p12">Natural honey</p>
+                             <h1 class="test22">Venkatesh</h1>
+                             <p class="p22">Cow Ghee, It's really good. When the quality is not compromised price wouldn't be an issue.</p>
+                          </div>
+                    </div>
+
+                </div>
+                <div class="faq">
+                    <h1 class="faq_h1">FAQ</h1>
+                    <p class="faq_p">Check out the most common questions our customers asked and if you Still have questions,<br> Contact our customer support.</p>
+                    <div class="faq_1">
+                        <p class="faq_h11">How much time does it take for shipping</p><hr>
+                        <p class="faq_h12">How much cost does it take for shipping</p><hr>
+                        <p class="faq_h13">Do you accept return and refunds</p>
+                    </div>
+
+                </div>
+                <div class="social_media">
+                    <h2 class="social_h1">Follow Us On Instagram</h2>
+                    <div class="social_images">
+                        <img  class="so1" src="insta img 1">
+                        <img   class="so2" src="insta img 2.jpg">
+                        <img   class="so3" src="insta img 3">
+                        <img   class="so4" src="insta img 4.jpg">
+                        <img  class="so5" src="insta img 5">
+                        <img  class="so6"src="insta img 6">
+                       
+
+                    </div>
+
+                </div>
+                <div class="footer_1">
+                    
+                        <div class="footer_2">
+                      
+                        <h3 class="footer_3">
+                            <h3 class="1">Customer Care</h3>
+                            <p class="2">FAQ</p>
+                            <p class="3">Shipping Policy</p>
+                            <p class="4">Refund Policy</p>
+                            <p class="5">cancillation Policy</p>
+                            <p class="6">Privacy Policy</p>
+                            <p class="7">Terms of Service</p>
+                            <p class="8">Contact Information</p>
+                            <p class="9">Wild foresthoney certificate</p>
+                            <p class="10">dark Forest Honey Certificate</p>
+                        </div>
+                        <div class="footer_4">
+                       
+                        <h3 class="footer_5">
+                            <h3 class="11">Contact Info</h3>
+                            <p class="12">Trade Name:VARADHI FARMS PRIVATE LIMITED</p>
+                            <p class="13">Email Support:varadhiforms@gmail.com</p>
+                            <p class="14">customer care number</p>
+                            <p class="15">+91 8977021193</p>
+                            <p class="16"> +91 8977021197</p>
+                            <p class="17">Customer Support Timings:10:30am to 6:30pm</p>
+                            <p class="18">address:Manikonda,Hyderabad,Telangana,pin-500089</p>
+                            <p class="19">FSSAI:23623028001252</p>
+                            <p class="20">Registered Address: Building No./Flat No.: Sy. No. 81,Plot No-161,Sector-1-Block-2<br>
+                                Name Of Premises/Building: Alkapur Township<br>
+                                Road/Street: Road No.25<br>
+                                Locality/Sub Locality: Neknampur<br>
+                                City/Town/Village: Hyderabad<br>
+                                District: Rangareddy<br>
+                                State: Telangana<br>
+                                PIN Code: 500089</p><br>
+                    
+                        </h3>
+                        </div>
+                   
+                    
+                </div>
+
+
+            </div>
+            
+            
+            
+
+        
+    </body>
+</html>
